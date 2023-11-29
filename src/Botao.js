@@ -1,13 +1,14 @@
 
 import { useState } from 'react'
 import './App.css'
-
+import useResult from './hooks/hook1'
 
 
 function App() {
     const [numeroUm, setNumeroUm] = useState(0)
     const [numeroDois, setNumeroDois] = useState(0)
     const [resultado, setResultado] = useState(0)
+    useResult(resultado)
     return(
         <>
             <h1>Gerenciador de tarefas</h1>
