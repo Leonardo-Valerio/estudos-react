@@ -1,12 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import Botao from './Botao';
+import TestProp from './Prop.js'
 
 function App() {
+  const handleClick = (valor) =>{
+    alert('Botão que aciona o tipo 1 de exibição foi clicado, Valor do botão: '+ valor)
+  }
+  const handleClickTipoDois = (valor) =>{
+    alert('Botão que aciona o tipo 2 de exibição foi clicado, Valor do botão: '+ valor)
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <Botao></Botao>
+        <TestProp onAcaoNoClique = {handleClick} mensagemNoClique = "Botão 10 clicado">Botao 10</TestProp>
+        <TestProp onAcaoNoClique = {handleClickTipoDois} mensagemNoClique = "Botão 20 clicado">Botao 20</TestProp>
+        <TestProp onAcaoNoClique = {handleClickTipoDois} mensagemNoClique = "Botão 30 clicado">Botao 30</TestProp>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
