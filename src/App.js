@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import TestProp from './Prop.js'
-
+import Calculate from './Calculadora.js';
 function App() {
   const handleClick = (valor) =>{
     alert('Botão que aciona o tipo 1 de exibição foi clicado, Valor do botão: '+ valor)
@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+       <Calculate></Calculate>
         <TestProp onAcaoNoClique = {handleClick} mensagemNoClique = "Botão 10 clicado">Botao 10</TestProp>
         <TestProp onAcaoNoClique = {handleClickTipoDois} mensagemNoClique = "Botão 20 clicado">Botao 20</TestProp>
         <TestProp onAcaoNoClique = {handleClickTipoDois} mensagemNoClique = "Botão 30 clicado">Botao 30</TestProp>
