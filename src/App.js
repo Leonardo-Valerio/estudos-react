@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import TestProp from './Prop.js'
+import TestProp from './Prop.js';
 import Calculate from './Calculadora.js';
 function App() {
   const handleClick = (valor) =>{
