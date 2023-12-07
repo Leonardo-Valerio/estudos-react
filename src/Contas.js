@@ -1,12 +1,8 @@
-import { useEffect, useState } from "react";
+
 
 function Math(props){
-   
-    const [historico, setHistorico] = useState([])
-    useEffect(()=>{
-        setHistorico([...historico,props.resultado])
-        console.log(historico)
-    }, [props.resultado])
+    
+
 
     const calculo = (operation)=> {
         if (operation === '+'){
