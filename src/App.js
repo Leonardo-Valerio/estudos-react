@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import TestProp from './Prop.js';
 import Calculate from './Calculadora.js';
+import ListarTarefas from './Tarefas.js'; 
 function App() {
   const handleClick = (valor) =>{
     alert('Botão que aciona o tipo 1 de exibição foi clicado, Valor do botão: '+ valor)
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <Calculate></Calculate>
+       <ListarTarefas></ListarTarefas>
         
         <img src={logo} className="App-logo" alt="logo" />
         <p>

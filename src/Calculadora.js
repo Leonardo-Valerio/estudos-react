@@ -56,6 +56,7 @@ function Calculate(){
         >*</Math>
         <h2>Resultado : {resultado}</h2>
         <button onClick={()=>{setMostrarHistorico(!mostrarHistorico)}}>Exibir Histórico</button>
+        <button>Excluir Tarefa</button>
         <ul>
             {
                 mostrarHistorico? historico.map((resultado,index)=>{
