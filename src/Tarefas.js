@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Tratar from "./TratarTarefa";
 import Excluir from "./ExcluirTarefa";
+import Editar from "./EditarTarefa";
 
 function ListarTarefas(){
     const [tarefas,setTarefa] =  useState('')
@@ -19,6 +20,7 @@ return(
         </label>
         <Tratar tarefa = {tarefas} setAdicionar = {setAdicionar} adicionar={adicionar}>Adiciona Tarefa</Tratar>
         <Excluir adicionar= {adicionar} setAdicionar = {setAdicionar}>Excluir Tarefa</Excluir>
+        <Editar adicionar = {adicionar} setAdicionar ={setAdicionar}>Editar Tarefa</Editar>
         <ul>
             {
                 adicionar.map((item, index)=>{
