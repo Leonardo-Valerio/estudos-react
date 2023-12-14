@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Tratar from "./TratarTarefa";
-import Excluir from "./ExcluirTarefa";
-import Editar from "./EditarTarefa";
+import Tratar from "../Molecules/TratarTarefa";
+import Excluir from "../Molecules/ExcluirTarefa";
+import Editar from "../Molecules/EditarTarefa";
 
 function ListarTarefas(){
     const [tarefas,setTarefa] =  useState('')
