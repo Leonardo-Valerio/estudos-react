@@ -1,4 +1,6 @@
 import { useState } from "react"
+import Botao from '../Atoms/Buttons'
+import Input from "../Atoms/Inputs"
 
 function Excluir(props){
     const [exibir, setExibir] = useState(false)
@@ -18,13 +20,13 @@ function Excluir(props){
     
     return(
         <>
-            <button onClick={()=>{setExibir(true)}}>{props.children}</button>
+            <Botao onClick={()=>{setExibir(true)}}>{props.children}</Botao>
             {exibir? (
             <>
-                <label>Digite a Tarefa que deseja excluir
-                    <input value={excluir} onChange={e=>{setExcluir(e.target.value)}}></input>
-                </label>
-                <button onClick={handleExcluir}>Excluir</button>
+                
+                <Input label = {'Digite a Tarefa que deseja excluir'} value={excluir} onChange={e=>{setExcluir(e.target.value)}}></Input>
+                
+                <Botao onClick={handleExcluir}>Excluir</Botao>
             </>
             ):''}
         </>

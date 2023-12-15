@@ -1,3 +1,5 @@
+import Botao from "../Atoms/Buttons"
+
 function Tratar(props){
     const handleTarefaIgual = ()=>{
         if(props.adicionar.includes(props.tarefa)){
@@ -9,7 +11,7 @@ function Tratar(props){
     }
     return(
         <>
-            <button onClick={handleTarefaIgual}>{props.children}</button>
+            <Botao onClick={handleTarefaIgual}>{props.children}</Botao>
         </>
     )
 }
