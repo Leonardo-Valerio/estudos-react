@@ -3,6 +3,9 @@ import '../App.css';
 import TestProp from '../Prop.js';
 import Calculate from '../Calculadora.js';
 import ListarTarefas from '../Components/Organisms/Tarefas.js'; 
+import Person1 from '../HOC/Person1.js';
+import InputQueMuda from '../HOC/input.js';
+
 function App() {
   const handleClick = (valor) =>{
     alert('Botão que aciona o tipo 1 de exibição foi clicado, Valor do botão: '+ valor)
@@ -13,7 +16,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <ListarTarefas></ListarTarefas>
+       
+
+      <InputQueMuda></InputQueMuda>
         
         <img src={logo} className="App-logo" alt="logo" />
         <p>
